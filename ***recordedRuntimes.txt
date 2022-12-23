@@ -1,0 +1,32 @@
+tinyArray => array size = 10
+Results for the tinyArray
+insert 209.355 μs
+append 190.33 μs
+Results for the tinyArray
+insert 80.287 μs
+append 328.59 μs
+
+smallArray => array size = 100
+Results for the smallArray  
+insert 97.018 μs
+append 336.407 μs
+
+mediumArray => array size = 1000
+Results for the mediumArray 
+insert 368.126 μs
+append 420.826 μs
+
+largeArray => array size = 10000
+Results for the largeArray  
+insert 16.532306 ms
+append 980.479 μs
+
+
+extraLargeArray  => array size = 100000
+Results for the extraLargeArray
+insert 2.182546929 s
+append 5.702026 ms
+
+At a very small array size(array.length = 10), the insert method and the append method were almost identical in runtime. The insert method even seemed to run faster in some instances where the array length was less than 1000. As the array length increased to 10000 and above, the append method had a faster runtime. The append method scales better, because it has a faster runtime as the size/length of the array increased significantly.
+
+
