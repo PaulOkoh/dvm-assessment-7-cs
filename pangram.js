@@ -9,3 +9,14 @@
 
 // isPangram("I like cats, but not mice");
 // // -> False
+
+function isPangram(str) {
+  let alphabets = [...'abcdefghijklmnopqrstuvwxyz']
+  return alphabets.every((letter) => str.toLowerCase().includes(letter))
+  
+}
+//O(n) runtime *****
+//space complexity O(1)
+
+console.log(isPangram("The quick brown fox jumps over the lazy dog!"))
+console.log(isPangram("I like cats, but not mice"))

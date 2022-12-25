@@ -25,6 +25,8 @@ const addToZero = (array) => {
   return false
 }
 
+//O(n^2) runtime ************
+//space complexity  O(n) ****
 console.log(addToZero([1]))
 console.log(addToZero([1]))
 console.log(addToZero([1, 2, 3]))

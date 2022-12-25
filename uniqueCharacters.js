@@ -10,5 +10,9 @@
 
  const hasUniqueChars = (str) => new Set(str).size === str.length
 
+//O(n) runtime ***********
+
+//Space complexity O(n)
+
  console.log(hasUniqueChars("Monday"));
  console.log(hasUniqueChars("Moonday"));

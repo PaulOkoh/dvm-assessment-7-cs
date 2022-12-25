@@ -30,3 +30,4 @@ append 5.702026 ms
 At a very small array size(array.length = 10), the insert method and the append method were almost identical in runtime. The insert method even seemed to run faster in some instances where the array length was less than 1000. As the array length increased to 10000 and above, the append method had a faster runtime. The append method scales better, because it has a faster runtime as the size/length of the array increased significantly.
 
 
+The unshift function is slower because it has to shift the index of every element to the right by 1,so as to allow space in the first index position.
